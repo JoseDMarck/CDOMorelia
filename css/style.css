@@ -10,3 +10,23 @@
   width: 100%;
   height: auto;
 }
+
+
+.logo-color{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.logo-color img{
+  width: 100%;
+  height: auto;
+}
+
+.audio-predicacion{
+  width: 238px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
