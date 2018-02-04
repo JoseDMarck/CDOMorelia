@@ -3,7 +3,9 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <div class="logo-blanco">
+            <a href="<?php echo site_url(); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-blanco.png">
+            </a>
           </div><!-- logo-blanco -->
         </a>
 
@@ -14,15 +16,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Horarios</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo site_url();?>/#horarios">Horarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Predicaciones y audios</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo site_url();?>/#series">Predicaciones y audios</a>
             </li>
            
 
            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Declaración de Fe</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo site_url();?>/#declaracion">Declaración de Fe</a>
             </li>
 
             <!--<li class="nav-item">
@@ -32,7 +34,7 @@
              
 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo site_url();?>/#contact">Contacto</a>
             </li>
           </ul>
         </div>

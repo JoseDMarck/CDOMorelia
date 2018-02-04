@@ -4,12 +4,12 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contactanos</h2>
-            <h3 class="section-subheading text-muted">Tel. (443) 3 14 00 01</h3>
+            <h3 class="section-subheading text-muted" style="color: #FFF !important;">Tel. (443) 3 14 00 01</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+            <form id="contactForm" class="contacto_form" name="sentMessage" novalidate action="<?php echo get_template_directory_uri(); ?>/contactoServices/ContactoService.php">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -40,7 +40,12 @@
             </form>
           </div>
 
-          
+
         </div>
       </div>
     </section>
+
+
+<div class="contenedorMensajeCorreo">
+    <div class="msj">El correo se ha enviado correctamente</div>
+</div>

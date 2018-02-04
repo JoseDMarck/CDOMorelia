@@ -1,7 +1,7 @@
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
       
-      <div class="container">
+      <div class="container" id="series">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Predicaciones</h2>
@@ -15,14 +15,14 @@
   $temp = $wp_query; 
   $wp_query = null; 
   $wp_query = new WP_Query(); 
-  $wp_query->query('showposts=10&post_type=post&category_name=Series'.'&paged='.$paged); 
+  $wp_query->query('showposts=9&post_type=post&category_name=Series'.'&paged='.$paged); 
 
   while ($wp_query->have_posts()) : $wp_query->the_post(); 
 ?>
 
 
     <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link">
+            <a class="portfolio-link" href="<?php echo the_permalink();?>">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-eye fa-3x"></i>
@@ -39,6 +39,12 @@
 
 <?php endwhile; ?>
 
+
+   <div class="col-lg-12 text-center">
+            <a href="<?php echo site_url(); ?>/series-casa-de-oracion-morelia/">
+              <button type="button" class="btn btn-outline-primary btn-lg ">Ver todas las series</button>
+            </a>
+        </div>
 
          
           

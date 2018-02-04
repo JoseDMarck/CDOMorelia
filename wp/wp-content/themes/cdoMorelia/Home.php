@@ -3,10 +3,7 @@
 
 
 
- <body id="page-top">
 
-<!-- 1.- Menu de navegación -->
-<?php echo get_template_part("contenidos/home/1-navegacion/1-navegacion")?>
 
 <!-- 2.-  Bienvenida -->
 <?php echo get_template_part("contenidos/home/2-Bienvenida/2-Bienvenida")?>

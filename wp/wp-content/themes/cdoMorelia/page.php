@@ -1,45 +1,31 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
 
-			<h1><?php the_title(); ?></h1>
+ <div class="BloqueMain">
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+ 	<div class="seccion-post">
+	 	
+	 	<div class="imagen">
+	 		<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
+	 	</div>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	 	<div class="titulo">
+	 		<h1 class="section-heading text-uppercase"><?php echo the_title(); ?></h1>
+	 	</div>
 
+
+	 	<div class="contenido">
+           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php the_content(); ?>
+			<?php endwhile; endif; ?>
+	 	</div>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-				<br class="clear">
+ 	</div><!-- seccion-post -->
+ 
+ </div><!-- BloqueMain-->
 
-				<?php edit_post_link(); ?>
 
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+ 
 
 <?php get_footer(); ?>

@@ -113,13 +113,189 @@ input:focus {
 	line-height: 22px !important;
 }
 
- 
+.BloqueMain{
+	max-width: 1180px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 160px;
+	margin-bottom: 40px;
+
+}
+
+
+.logo-blanco{
+  width: 200px;
+  height: auto;
+}
+
+.logo-blanco img{
+  width: 100%;
+  height: auto;
+}
+
+
+.logo-color{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.logo-color img{
+  width: 100%;
+  height: auto;
+}
+
+.audio-predicacion{
+  width: 238px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-pagination{
+	font-size: 18px; 	
+}
 
 
 /*------------------------------------*\
-    IMAGES
+    DIRECCION
 \*------------------------------------*/
 
+.BloqueDireccion{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+
+
+
+/*------------------------------------*\
+   SECCIÓN POSTR
+\*------------------------------------*/
+.seccion-post{
+	width: 100%;
+ 	height: auto;
+}
+
+
+.seccion-post > .imagen{
+	max-width: 600px;
+	width: 100%;
+ 	height: auto;
+ 	margin: 0 auto;
+ 	margin-bottom:40px;
+}
+ 
+
+.seccion-post > .titulo{
+	width: 100%;
+	height: auto;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.seccion-post > .imagen img{
+	width: 100%;
+ 	height: auto;
+}
+ 
+
+
+.seccion-post > .contenido{
+	max-width: 800px;
+	width: 100%;
+ 	height: auto;
+ 	margin:  0 auto;
+ 	font-size: 16px;	
+} 
+
+
+
+
+/*------------------------------------*\
+    404p
+\*------------------------------------*/
+
+
+.main404{
+	max-width: 2560px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  left: 0;
+  right: 0;
+	margin: 0 auto;
+	background: #383838;
+}
+
+.C404{
+	max-width: 340px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    padding-top: 0px;
+    margin: 0 auto;
+    z-index: 1;
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+}
+
+.C404 a{
+	color: #FFD216;
+}
+
+.C404 img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+
+
+.contenedorMensajeCorreo{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+
+/*------------------------------------*\
+	CONTACTO
+\*------------------------------------*/
+
+
+.contenedorMensajeCorreo > .msj{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height:auto;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgba(0,0,0,0.8); 
+	font-size: 20px;
+	line-height: 20px;
+	color: #777;
+	text-align: center;
+	 padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 
 /*------------------------------------*\

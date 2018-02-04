@@ -1,5 +1,5 @@
     <!-- About -->
-    <section id="about">
+    <section id="declaracion">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

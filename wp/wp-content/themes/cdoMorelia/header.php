@@ -5,8 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta property="og:url"                content="<?php echo the_permalink(); ?>" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Casa de Oración Morelia" />
+    <meta property="og:image"              content="<?php echo get_template_directory_uri();?>/img/general.png" />
+
     <link rel="icon" href="<?php echo get_template_directory_uri();?>/img/logos/favicon.png" sizes="32x32" />
 
     <title>Casa de Oración Morelia</title>
@@ -27,3 +30,8 @@
  <?php wp_head(); ?>
  
   </head>
+
+ <body id="page-top">
+
+<!-- 1.- Menu de navegación -->
+<?php echo get_template_part("contenidos/home/1-navegacion/1-navegacion")?>
